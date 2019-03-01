@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    pdf-extract (0.1.0)
+    pdf-extract-meta (0.1.0)
       commander (~> 4.4)
       oj (~> 3.0)
       pdf-reader (~> 2.2)
@@ -46,8 +46,8 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 2.0)
-  byebug
-  pdf-extract!
+  byebug (~> 11.0)
+  pdf-extract-meta!
   rake (~> 10.0)
   rspec (~> 3.0)
 
