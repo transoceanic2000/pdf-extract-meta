@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "pdf/extract/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "pdf-extract"
+  spec.name          = "pdf-extract-meta"
   spec.version       = PDF::Extract::VERSION
   spec.authors       = ["Matthew Chadwick"]
   spec.email         = ["matthew@wescrimmage.com"]
