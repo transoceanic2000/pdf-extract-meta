@@ -21,7 +21,7 @@ bin/pdf-extract annotations spec/data/annotation-examples/note.pdf
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'pdf-extract'
+gem 'pdf-extract-meta'
 ```
 
 And then execute:
@@ -30,7 +30,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install pdf-extract
+    $ gem install pdf-extract-meta
 
 ## Usage
 
