@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
   spec.summary       = "A command line utility for extracting annotation and field metadata from a PDF in JSON format."
-  spec.homepage      = "https://github.com/Scrimmage/pdf-extract"
+  spec.homepage      = "https://github.com/Scrimmage/pdf-extract-meta"
 
   if s.respond_to?(:metadata=)
     s.metadata = {
