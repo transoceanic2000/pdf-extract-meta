@@ -12,6 +12,14 @@ Gem::Specification.new do |spec|
   spec.summary       = "A command line utility for extracting annotation and field metadata from a PDF in JSON format."
   spec.homepage      = "https://github.com/Scrimmage/pdf-extract"
 
+  if s.respond_to?(:metadata=)
+    s.metadata = {
+      "bug_tracker_uri" => "https://github.com/Scrimmage/pdf-extract-meta/issues",
+      "changelog_uri" => "https://github.com/Scrimmage/pdf-extract-meta/blob/master/CHANGELOG.md",
+      "source_code_uri" => "https://github.com/Scrimmage/pdf-extract-meta/",
+    }
+  end
+
   spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
