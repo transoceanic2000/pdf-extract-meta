@@ -1,6 +1,2 @@
 #!/usr/bin/env ruby
-
-$:.push File.expand_path("../../lib", __FILE__)
-
-require "pdf/extract"
-require "pdf/extract/commands"
+load File.expand_path("../pdf-extract-meta", __FILE__)
