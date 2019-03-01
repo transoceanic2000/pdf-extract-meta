@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    pdf-extract-meta (0.1.0)
+    pdf-extract-meta (0.1.1)
       commander (~> 4.4)
       oj (~> 3.0)
       pdf-reader (~> 2.2)
