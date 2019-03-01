@@ -1,5 +1,9 @@
 # PDF::Extract
 
+[![Build Status](https://travis-ci.org/Scrimmage/pdf-extract-meta.svg)](https://travis-ci.org/Scrimmage/pdf-extract-meta)
+
+[![Code Climate](https://codeclimate.com/github/Scrimmage/pdf-extract-meta.png)](https://codeclimate.com/github/Scrimmage/pdf-extract-meta)
+
 This gem provides a command line interface to extract field and annotation metadata from a PDF.
 
 ```
