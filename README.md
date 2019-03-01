@@ -7,12 +7,12 @@
 This gem provides a command line interface to extract field and annotation metadata from a PDF.
 
 ```
-bin/pdf-extract fields spec/data/field-examples/text.pdf
+pdf-extract fields spec/data/field-examples/text.pdf
 [{"name":"Sample Text Field","value":"Hello"},{"name":"Sample Text Field (required)","value":null}]
 ```
 
 ```
-bin/pdf-extract annotations spec/data/annotation-examples/note.pdf
+pdf-extract annotations spec/data/annotation-examples/note.pdf
 [{"name":null,"contents":"Hello"},{"name":null,"contents":"Hello"}]
 ```
 
@@ -34,7 +34,7 @@ Or install it yourself as:
 
 ## Usage
 
-Run `bin/pdf-extract --help` for usage.
+Run `pdf-extract --help` for usage.
 
 From within Ruby:
 ```
