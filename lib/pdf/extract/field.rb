@@ -1,6 +1,7 @@
 module PDF
   module Extract
     class Field
+      BOM_BYTES = [0xFF, 0xFE].freeze
 
       attr_reader :data, :reference_resoler
 
@@ -24,7 +25,12 @@ module PDF
       # PDF Reference 6th Edition, Version 1.7, November 2006 page 676
       # The field’s value, whose format varies depending on the field type.
       def value
-        data[:V]
+        string_value = data[:V]
+        if string_value.encoding == Encoding::ASCII_8BIT && string_value.bytes[0..1].all? { |b| BOM_BYTES.include?(b) }
+          # It's a UTF-16 encoded string, but for some reason we think it's encoded as ASCII, correct the encoding
+          string_value = string_value.encode( 'UTF-8', 'UTF-16' )
+        end
+        string_value
       end
 
       def image
@@ -70,7 +76,6 @@ module PDF
 
         h
       end
-
     end
   end
 end
